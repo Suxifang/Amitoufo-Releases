@@ -1,0 +1,16 @@
+阿弥陀佛 / Amitoufo
+
+Based on MeetingCopilot by JWM0203:
+https://github.com/JWM0203/MeetingCopilot
+Upstream baseline: v0.2.0-beta.1
+Copyright (c) 2025 JWM0203 and upstream contributors.
+
+Modifications Copyright (c) 2026 Suxifang.
+Fork source (private): https://github.com/Suxifang/Amitoufo
+Public downloads and user documentation: https://github.com/Suxifang/Amitoufo-Releases
+The fork modifies Windows capture protection, window interaction, audio lifecycle,
+answer submission/context, recovery, UI, tests, documentation and release tooling.
+See MODIFICATIONS.md and CHANGELOG.md. This is not an upstream release.
+
+Distributed under Apache License 2.0; see LICENSE.
+This notice supplies attribution and does not change the license.
