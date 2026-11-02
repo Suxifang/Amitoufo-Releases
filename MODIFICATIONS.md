@@ -196,3 +196,4 @@ beta.5 补充：将私有源码与公开下载分仓，新增 `shared/releaseRep
 - `tools/startup-regression.mjs`
 
 - 1.0.0-beta.2：加入由用户发起的 Windows 安装版更新流程与更新元数据；检查与下载不涉及个人数据，保留原窗口保护机制。
+- 1.0.0-beta.5：在 `build/installer.nsh` 加入原生文件占用预检，在旧版卸载前报告被占用文件；`tools/installer-file-lock-regression.mjs` 使用真实 NSIS 与隔离虚构文件核验阻止安装和释放后重试。
