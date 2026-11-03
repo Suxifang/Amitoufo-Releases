@@ -36,7 +36,7 @@ These are the same steps the in-app help center and the setup wizard show.
 
 ### DeepSeek (recommended for AI answers)
 
-Used for: AI answers and inline transcript translation. Default model `deepseek-chat` (non-thinking mode, fastest first token).
+Used for: AI answers and inline transcript translation. New setup uses `deepseek-flash` with reasoning explicitly disabled; upgrades retain existing configurations.
 
 1. Open the [DeepSeek open platform](https://platform.deepseek.com/).
 2. Sign in with your phone number or email; create an account on first use.
@@ -51,7 +51,7 @@ Common problems:
 - `Insufficient Balance`: the key is valid, the account just needs a top-up.
 - The key is shown once: if you lost it, delete it and create another — the account is unaffected.
 
-Model options: `deepseek-chat` (fast, default), `deepseek-v4-flash` (reasoning chain first, slower first token), `deepseek-v4-pro` (strongest reasoning; good for review, not for snap answers).
+Choose the model and reasoning mode under Settings → AI answer service. Reading the server model list can provide current model names, supported efforts and their defaults. Offline models are references only; model ids and reasoning effort are configured separately.
 
 ### Alibaba Cloud Model Studio · mainland (recommended for live ASR)
 
@@ -106,7 +106,7 @@ Used for: the vision model, `https://generativelanguage.googleapis.com/v1beta/op
 ### Custom (OpenAI-compatible services)
 
 1. Prepare an OpenAI-compatible base URL (ending in `/v1`) and a model name.
-2. Fill in the base URL, model and API key under Settings → Advanced.
+2. Under Settings → AI answer service, choose Custom / GPT relay. Enter the base URL and key in Connection and test, then choose or enter the model id. Reasoning uses the provider default unless you select an effort; when no capability metadata is returned, manual efforts require provider support.
 3. For safety, MeetingCopilot only ever hands the OS browser a URL from its built-in allowlist of official provider pages — visit a custom provider's site yourself.
 
 ---

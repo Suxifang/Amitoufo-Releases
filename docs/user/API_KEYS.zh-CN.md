@@ -36,7 +36,7 @@ MeetingCopilot 采用 **BYOK（Bring Your Own Key，自带 Key）**：
 
 ### DeepSeek（推荐用于 AI 回答）
 
-用途：AI 回答与转录内联翻译。默认模型 `deepseek-chat`（非思考模式，首个字最快）。
+用途：AI 回答与转录内联翻译。新引导使用 `deepseek-flash`，并明确关闭思考；旧配置升级时保留。
 
 1. 打开 [DeepSeek 开放平台](https://platform.deepseek.com/)。
 2. 使用手机号或邮箱登录；首次使用请先注册账号。
@@ -51,7 +51,7 @@ MeetingCopilot 采用 **BYOK（Bring Your Own Key，自带 Key）**：
 - 提示 `Insufficient Balance`：Key 本身有效，去平台充值即可。
 - Key 只显示一次：没记下就删掉重建，不影响账号。
 
-可选模型：`deepseek-chat`（快，默认）、`deepseek-v4-flash`（带推理链，首字更慢）、`deepseek-v4-pro`（最强推理，适合复盘不适合抢答）。
+进入“设置 → AI 回答服务”选择模型与思考方式。读取后台列表可获取当前模型名称、支持的思考档位和默认强度；离线列表仅为参考。模型名称与思考强度独立配置，不再靠选择不同别名切换思考。
 
 ### 阿里云百炼 · 中国大陆站（推荐用于实时语音识别）
 
@@ -106,7 +106,7 @@ MeetingCopilot 采用 **BYOK（Bring Your Own Key，自带 Key）**：
 ### 自定义（OpenAI 兼容服务）
 
 1. 准备一个 OpenAI 兼容的服务地址（以 `/v1` 结尾）与模型名称。
-2. 在 设置 → 高级设置 里填写 Base URL、模型与 API Key。
+2. 在“设置 → AI 回答服务”选择“自定义 / GPT 中转”，在连接信息中填写 Base URL 与 Key，再选择或手填模型。思考强度默认交给服务商；后台未报告支持项时，可按中转说明手动选择并测试。
 3. 出于安全考虑，MeetingCopilot 只会用系统浏览器打开内置允许列表里的官方页面，自定义服务商的页面请自行访问。
 
 ---

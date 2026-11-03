@@ -89,12 +89,13 @@ Review the summary and click "Enter MeetingCopilot". The wizard writes the whole
 4. **Auto** pauses/resumes automatic answers while transcription continues. **Stop** stops both sources and future automatic answers. In Phone mode, pause Auto while answering yourself to avoid mixed-source mistakes.
 5. For answers grounded in your experience, import material with **📄Resume** / **📋JD** (`.md/.txt/.docx/.pdf`). Parsing is local; the text is only sent to the LLM you configured, and only as context for a question you asked.
 
-Other title-bar controls:
+Common controls and settings:
 
 | Button | What it does |
 |---|---|
-| `A:ZH` / `A:EN` | Language the AI answers in |
-| `Text` / `Vision` | Answer with the text LLM, or with the vision model (screenshot Q&A) |
+| Settings → AI answer language | Set the Chinese/English answer preference |
+| Settings → Answering model | Choose the text or multimodal model; screenshot Q&A needs a configured vision provider |
+| Settings → Show latency data (HUD) | Display transcription latency; hidden by default |
 | `🎤Mic` | Toggle your own speech recording in Computer mode, or question capture in Phone mode |
 | `Stealth:On/Off` | Enables window capture protection; verify screenshots, recordings and the receiving meeting client on the target computer |
 | `—` | Hide the window; the hotkey or the tray icon brings it back |
