@@ -1,5 +1,9 @@
 # 修改清单
 
+beta.11 补充：新增 `shared/continuousAnswerQueue.ts` 保存各独立终稿及等待截止时间，自动答改为逐题调度；去重记录覆盖多个终稿，清空转录同步取消旧待答。新增纯逻辑和真实打包程序回归，并接入候选构建检查；后台启动工具统一清理继承的 Electron Node 模式及旧 MC 测试标记。连续负载检查同时核对题目内容、顺序和保存标签，避免只数请求漏掉替换或重复。未修改提示词或窗口采集保护。
+
+beta.10 补充：新增 `src/components/AnswerText.tsx` 收紧段间距，存储及复制保留原文；增加阅读与重复操作回归，扩展跨模型交叉检查。取消测试按具体问题等待断流，收音测试显式隐藏托盘、禁用回答热键，不修改日常配置。
+
 beta.9 补充：增加全局回答篇幅与主界面快捷切换，设置和全部输入使用同一保存项；共用提示构建器适配两档篇幅与追问。新增 `shared/answerDetail.ts`、`test/answerDetail.spec.ts` 和 `tools/answer-detail-restart.mjs`，扩充三输入与设置回归。
 
 本项目基于 JWM0203/MeetingCopilot v0.2.0-beta.1。以下为首个独立发布版本相对本地上游基线 12ef779 的修改／新增文件，后续变化继续记录在 Git 历史和 CHANGELOG.md。保留原有许可证和署名。
