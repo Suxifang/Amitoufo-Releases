@@ -4,7 +4,9 @@
 
 ## 下载和安装
 
-进入 [Releases 下载页](https://github.com/Suxifang/Amitoufo-Releases/releases)，选择版本中的 **`Amitoufo-<版本>-win-x64-setup.exe`**。无需 GitHub 登录；不要下载 `Source code` 作为安装程序。
+当前版本：[**手机 AI 接口的最后一版本 · 1.0.0-beta.21**](https://github.com/Suxifang/Amitoufo-Releases/releases/tag/v1.0.0-beta.21)。后续开发计划集中维护电脑端；需要手机模式的用户可保留本版。
+
+进入版本页，选择 **`Amitoufo-<版本>-win-x64-setup.exe`**。无需 GitHub 登录；不要下载 `Source code` 作为安装程序。[历史发布](https://github.com/Suxifang/Amitoufo-Releases/releases)继续保留。
 
 - 适用 Windows 10/11 x64。安装后从桌面“阿弥陀佛”打开。
 - 首次使用配置自己的语音转录与回答服务 Key，并导入自己的材料。分享包不携带维护者的个人资料。
@@ -28,9 +30,11 @@ beta.4 及更早版本仍使用旧地址；请先从本页手动安装一次 bet
 
 ## 功能与使用说明
 
-提供电脑声音／麦克风转录、结合个人背景的回答、翻译及Windows窗口采集保护。支持会话材料、F8提交题目、Ctrl+B隐藏／呼出、正文点击穿透与面板滚动等功能。
+提供电脑声音／麦克风转录、结合个人背景的回答、翻译及Windows窗口采集保护。顶部默认一行，点击“⋯”展开收音、简洁／详细、会话和资料；窗口可拖出屏幕边缘，隐藏后重新呼出会移回可见范围。
 
-电脑会议模式可自动识别提问并回答，本人麦克风主要记录上下文；手机外放模式默认持续转录，题目说完按F8提交。一个麦克风混录手机和本人时，当前版本不能可靠区分说话人。
+电脑会议模式从系统声音转录对方问题并自动回答，本人麦克风记录实际回答供上下文参考；手机外放模式由电脑麦克风混录双方，默认手动答。题目完整后点“答最新题”或使用已配置快捷键（默认F8，可在设置修改）。手机混录依靠话轮及文本选题，有限案例不保证任意口语都能正确区分。
+
+电脑、手机和打字共用回答规则与简洁／详细设置，重点是切题、长题完整、多问点答全及上下文衔接；参考回答允许围绕简历主线加工。具体检查范围和剩余限制见本版发布说明。
 
 [完整使用手册](docs/USER_GUIDE.zh-CN.md) · [Windows安装与更新](docs/user/INSTALL_WINDOWS.zh-CN.md) · [服务Key教程](docs/user/API_KEYS.zh-CN.md) · [故障排查](docs/user/TROUBLESHOOTING.zh-CN.md) · [问题反馈](https://github.com/Suxifang/Amitoufo-Releases/issues)
 
